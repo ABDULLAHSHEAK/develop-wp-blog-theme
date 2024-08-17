@@ -1,0 +1,18 @@
+/*
+Theme Name: MAS Blog
+Theme URL: http://facebook.com/maswebsolution
+Version: 1.0.0
+Author: Md Abdullah Shake
+Author URI: http://facebook.com/mdabdullahshake 
+Text Domain: masitacademy
+Description: This is my first wordpress theme. You can use this theme for your blog website.
+Tags: masitacademy, blog, blog theme, wordpress theme, abdullah theme, super blog theme, masblog, masblog theme, blog website, wordpress theme
+Requires at least: 6.4
+Tested up to: 6.6 
+Requires PHP: 7.0
+License: GNU General Public License v2 or later 
+License URI: http: //www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+body{background-color: red;}

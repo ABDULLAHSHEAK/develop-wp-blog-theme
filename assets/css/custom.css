@@ -1,0 +1,587 @@
+/* ============================
+common css 
+============================ */
+
+:root {
+    --primary: #ea1a70;
+    --secondary: #242A56;
+    --balck: #333;
+    --white: #fff;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    background: #f8f9fa;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
+    line-height: 1.5em;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+a.mas_more {
+    background: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+a.mas_more:hover {
+    background: var(--secondary);
+}
+
+/* ============================
+header css 
+============================ */
+
+#header_area {
+    padding: 15px 0;
+    background: var(--white);
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+ul#nav {
+    text-align: right;
+    margin-bottom: 0;
+}
+
+#nav li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+#nav li a {
+    text-decoration: none;
+    /* padding: 8px 15px; */
+    font-size: 18px;
+    color: var(--secondary);
+    transition: 0.5s;
+    font-weight: 600;
+    padding: 8px 12px 10px 12px;
+    text-transform: uppercase;
+}
+
+ul#nav li a:hover {
+    background-color: var(--secondary);
+    border-radius: 5px;
+    color: var(--white);
+}
+
+/* ============================
+MENU POSITION 
+============================ */
+#header_area .left_menu .col-md-3 {
+    order: 2;
+}
+
+#header_area .left_menu .col-md-9 {
+    order: 1;
+}
+
+#header_area .left_menu .col-md-9 ul {
+    text-align: left;
+}
+
+/* //center menu //  */
+#header_area .center_menu .col-md-3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#header_area .center_menu .col-md-3 img {
+    width: 100%;
+    width: 25%;
+}
+
+#header_area .center_menu .col-md-9 {
+    width: 100%;
+    text-align: center;
+}
+
+#header_area .center_menu .col-md-9 ul {
+    text-align: center;
+}
+
+/* ============================
+hero css
+============================ */
+#hero_area {
+    width: 100%;
+}
+
+/* ============================
+COPYRIGHT SECTION TEXT
+============================ */
+#copyright_area {
+    background: #292929;
+    padding: 20px 0;
+    color: var(--white);
+}
+
+#copyright_area p {
+    margin: 0;
+    color: var(--white);
+    font-size: 15px;
+    text-align: center;
+}
+
+#copyright_area p a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+#copyright_area p a:hover {
+    color: var(--white);
+    text-decoration: underline;
+
+}
+
+/* ============================
+INDEX PAGE STYLE
+============================ */
+#body_area {
+    padding: 45px 0;
+}
+
+#body_area .blog_area {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 0 10px #ddd;
+    transition: 0.5s;
+    background: var(--white);
+}
+
+#body_area .blog_area:hover {
+    background: #dddddd6b;
+}
+
+#body_area .post_img {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+#body_area .post_img img {
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+    border: 5px solid #f3eeee;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #333;
+}
+
+#body_area .post_img img:hover {
+    transform: scale(1.1) rotate(1deg);
+    /* transform: translateX(10px); */
+}
+
+#body_area .post_details {
+    width: 100%;
+}
+
+#body_area .post_details h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#body_area .post_details h2 a {
+    color: #262626;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#body_area .post_details h2 a:hover {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+
+#body_area .blog_area .inner_blog {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+/*===========================================
+  Pagenav Area Styling
+===========================================*/
+
+#page_nav p.pages {
+    background: var(--primary);
+    color: var(--white);
+    padding: 5px 10px;
+}
+
+#page_nav p.pages span {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+#page_nav .page-numbers {
+    background: var(--primary);
+    color: var(--white);
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    transition: 0.5s;
+}
+
+#page_nav .page-numbers.current,
+#page_nav .page-numbers:hover {
+    background: #262626;
+}
+
+/*===========================================
+  Sidebar Area Css
+===========================================*/
+
+.wp-block-heading {
+    font-size: 20px;
+    margin-top: 15px;
+    background: var(--primary);
+    padding: 5px 15px;
+    color: var(--white);
+    font-weight: 400;
+    border-radius: 3px;
+    font-family: Oswald
+}
+
+#body_area .child_sidebar {
+    margin: 15px 0;
+}
+
+#body_area .child_sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+#body_area .child_sidebar ul li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#body_area .child_sidebar ul li a {
+    display: inline-block;
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.child_sidebar ul li a:hover {
+    color: var(--primary);
+}
+
+.child_sidebar input[type='search'] {
+    background: var(--white);
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+}
+
+.child_sidebar button[type='submit'] {
+    background: var(--primary);
+    color: var(--white);
+    transition: .5s;
+}
+
+.child_sidebar button[type='submit']:hover {
+    background: var(--secondary);
+}
+
+.child_sidebar select {
+    width: 100%;
+    padding: 8px 15px;
+    border: 2px solid var(--primary);
+}
+
+.child_sidebar a.tag-cloud-link {
+    background: var(--secondary);
+    font-size: 15px !important;
+    text-decoration: none;
+    color: var(--white);
+    padding: 5px 8px;
+    margin-bottom: 5px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.child_sidebar a.tag-cloud-link:hover {
+    background: var(--primary);
+}
+
+/*===========================================
+  Sidebar Area Css
+===========================================*/
+
+section#main_footer {
+    background: var(--secondary);
+}
+
+.child_sidebar p {
+    color: var(--white);
+}
+
+#main_footer .section {
+    padding: 20px 0;
+}
+
+.child_sidebar .wp-block-page-list {
+    display: inline-block;
+}
+
+.child_sidebar .wp-block-page-list li {
+    list-style: none;
+}
+
+.child_sidebar .wp-block-page-list li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.child_sidebar .wp-block-page-list li a:hover {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.child_sidebar .wp-block-page-list ul {
+    display: none;
+}
+
+.wp-block-search__label {
+    color: var(--white);
+}
+
+.child_sidebar ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+/* ==========================================================================
+   Comments Area
+========================================================================== */
+/* General styles for comment area */
+.comments-area {
+    background: var(--white) none repeat scroll 0 0;
+    clear: both;
+    margin: 20px auto 0;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 5px;
+}
+
+/* Header styles */
+.comments-area h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Comment list styles */
+.commentlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.comment .comment-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.comment .avatar {
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.comment .comment-author {
+    margin-bottom: 5px;
+}
+
+.comment .comment-author a {
+    color: #0073aa;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.comment .comment-meta {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.comment .comment-meta a {
+    color: #999;
+}
+
+.comment .comment-meta a:hover {
+    color: #0073aa;
+}
+
+.comment .reply {
+    margin-top: 10px;
+}
+
+.comment .reply a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.comment .reply a:hover {
+    color: #005b8a;
+}
+
+/* Form styles */
+.comment-respond {
+    margin-top: 40px;
+}
+
+.comment-respond h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.comment-form p {
+    margin-bottom: 20px;
+}
+
+.comment-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.comment-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.comment-form .form-submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.comment-form .submit {
+background: var(--primary);
+    color: var(--white);
+    transition: .5s;
+    border: var(--primary);
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+
+.comment-form .submit:hover {
+    background-color: var(--secondary);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .comment .comment-body {
+        flex-direction: column;
+    }
+
+    .comment .avatar {
+        margin-bottom: 10px;
+    }
+
+    .comment-form input[type="text"],
+    .comment-form input[type="email"],
+    .comment-form input[type="url"],
+    .comment-form textarea {
+        padding: 8px;
+    }
+
+    .comment-form .form-submit {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .comment-form .submit {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*===========================================
+    404 Page Css
+===========================================*/
+.error-container {
+    text-align: center;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.error-container h1 {
+    font-size: 5rem;
+    color: var(--primary);
+}
+
+.error-container p {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.error-container a {
+    text-decoration: none;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.error-container a:hover {
+    background-color: var(--secondary);
+}
