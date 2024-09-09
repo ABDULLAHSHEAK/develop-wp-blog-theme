@@ -26,6 +26,9 @@ p {
     font-size: 15px;
     line-height: 1.5em;
 }
+a{
+    text-decoration: none;
+}
 
 h1,
 h2,
@@ -584,4 +587,35 @@ background: var(--primary);
 
 .error-container a:hover {
     background-color: var(--secondary);
+}
+
+/* theme service area  */
+.service_area{
+    margin: 50px 0;
+}
+.service_area .chile-service{
+    background: var(--white);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+/* Letest post show css  */
+.home_letest_post .wp-block-latest-posts__post-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--balck);
+}
+
+.home_letest_post li {
+    margin: 20px 0;
+    background: var(--white);
+    padding: 15px;
+    box-shadow: 0 0 10px #ddd;
+    transition: 0.5s;
+}
+.home_letest_post li:hover {
+    background: #ddd;
+    padding: 15px;
+    box-shadow: 0 0 20px #ddd;
 }

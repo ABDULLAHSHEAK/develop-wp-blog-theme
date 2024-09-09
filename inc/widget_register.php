@@ -44,5 +44,15 @@ function mas_widgets_register(){
       'before_title' => '<h2 class="title">',
       'after_title' => '</h2>',
    ));
+   // HOME PAGE WIDGET REGISTER
+   register_sidebar(array(
+      'name' => __('Home Page Widgets 1', 'masitacademy'),
+      'id'   => 'home-1',
+      'description' => __('Apperas in the footer in blog page and also other page', 'masitacademy'),
+      'before_widget' => '<div class="home_letest_post">',
+      'after_widget' => '</div>',
+      'before_title' => '<h2 class="letest_post_title">',
+      'after_title' => '</h2>',
+   ));
 }
 add_action('widgets_init', 'mas_widgets_register');

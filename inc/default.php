@@ -3,8 +3,9 @@
 add_theme_support('title-tag');
 
 // Post Image 
-add_theme_support('post-thumbnails', array('page' , 'post'));
+add_theme_support('post-thumbnails', array('page' , 'post', 'service'));
 add_image_size('post-thumbnails', 966, 350, true);
+add_image_size('service', 966, 350, true);
 
 // EXCERPT MORE BUTTON AND WORD LENGTH
 function mas_more_btn($more){
